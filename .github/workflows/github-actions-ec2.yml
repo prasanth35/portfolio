@@ -23,10 +23,12 @@ jobs:
           script: |
             whoami
             cd /opt/prasanth/portfolio
+            node --version
+            npm --version
             git branch
             pwd
-            # git checkout master
-            # git pull
+            git checkout master
+            git pull
             # npm install
             # npm run build
             echo "SUCCESS" 
