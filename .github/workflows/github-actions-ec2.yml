@@ -21,12 +21,13 @@ jobs:
           username: ${{ secrets.USERNAME }}
           key: ${{ secrets.EC2_SSH_KEY }}
           script: |
-            pwd
+            whoami
             cd /opt/prasanth/portfolio
             git branch
-            git checkout master
-            git pull
-            npm install
-            npm run build
+            pwd
+            # git checkout master
+            # git pull
+            # npm install
+            # npm run build
             echo "SUCCESS" 
 
