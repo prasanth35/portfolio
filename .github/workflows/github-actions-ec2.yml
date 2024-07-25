@@ -21,8 +21,7 @@ jobs:
           username: ${{ secrets.USERNAME }}
           key: ${{ secrets.EC2_SSH_KEY }}
           script: |
-            cat /etc/hosts
-            sudo su
+            ls
             cd /opt/prasanth/portfolio
             git branch
             git checkout master
