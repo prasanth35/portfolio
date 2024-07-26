@@ -1,5 +1,4 @@
-import React from 'react';
-import { Box, Button, IconButton, Stack, Typography } from '@mui/material';
+import { Button, Stack } from '@mui/material';
 import { Document, Page, pdfjs } from 'react-pdf';
 import DownloadForOfflineIcon from '@mui/icons-material/DownloadForOffline';
 import 'react-pdf/dist/esm/Page/AnnotationLayer.css';

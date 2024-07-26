@@ -23,12 +23,12 @@ jobs:
           script: |
             whoami
             cd /opt/prasanth/portfolio
-            sudo node --version
-            sudo npm --version
             sudo git branch
             sudo git checkout master
             sudo git pull
-            # npm install
-            # npm run build
+            if pm2 show portolio; then pm2 delete portolio; fi
+            npm install
+            npm run build
+            pm2 start ecosystem.config.ts --env prod
             echo "SUCCESS" 
 
