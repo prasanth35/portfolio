@@ -22,11 +22,10 @@ jobs:
           key: ${{ secrets.EC2_SSH_KEY }}
           script: |
             whoami
-            sudo cd /opt/prasanth/portfolio
+            cd /opt/prasanth/portfolio
             sudo node --version
             sudo npm --version
             sudo git branch
-            sudo pwd
             sudo git checkout master
             sudo git pull
             # npm install
