@@ -21,17 +21,10 @@ jobs:
           username: ${{ secrets.USERNAME }}
           key: ${{ secrets.EC2_SSH_KEY }}
           script: |
-            whoami
             cd prasanth/portfolio
             git branch
             git checkout master
             git pull
-            npm --version
-            # npm install pm2 -g
-            pm2 --version
-            # npm install
-            # npm run build
-            # pm2 start ecosystem.config.ts --env prod
-            # pm2 list
+            yarn deploy-prod
             echo "SUCCESS" 
 
