@@ -1,13 +1,12 @@
-import React from 'react';
 import './theme/index.css'
-import Home from './modules/Home';
 import './theme/background.scss'
+import Home from './modules/Home';
 import { Outlet, RouterProvider, createBrowserRouter } from 'react-router-dom';
 import SkyLayout from './Common/Layout/SkyLayout';
 import NavBar from './Common/Layout/NavBar';
 import About from './modules/About';
 import Projects from './modules/Project';
-import Resume from './modules/Resume';
+import { Resume } from './modules/Resume';
 
 
 const  NavbarWrapper = () => {

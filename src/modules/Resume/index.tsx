@@ -1,30 +1,32 @@
-import { Button, Stack } from '@mui/material';
-import { Document, Page, pdfjs } from 'react-pdf';
-import DownloadForOfflineIcon from '@mui/icons-material/DownloadForOffline';
-import 'react-pdf/dist/esm/Page/AnnotationLayer.css';
-import 'react-pdf/dist/esm/Page/TextLayer.css';
-pdfjs.GlobalWorkerOptions.workerSrc = `//unpkg.com/pdfjs-dist@${pdfjs.version}/build/pdf.worker.min.js`;
+import Profile  from "./Components/Profile";
+import Academic  from "./Components/Academic";
+import Skills from "./Components/Skills";
+import Works  from "./Components/Works";
+import AboutMe  from "./Components/AboutMe";
 
-const Resume = () => {
+import { Data as dataSchema } from '../../Lib/Schemas/Data.js';
+import Projects  from "./Components/Projects";
+
+export const Resume = () => {
+  const query = '(min-width: 968px)';
+
+  const { profile, aboutMe, skills, socialMedia, experience } = dataSchema;
   return (
-    <Stack
-      flexDirection={'column'}
-      alignItems={'center'}
-      height='100vh'
-      overflow="auto"
-      mt={10}
-      gap={3}
-    >
-      <Document file={require('../../Assets/Pdf/prasanthResume.pdf')} >
-        <Page pageNumber={1} scale={0.6} />
-      </Document>
-
-      <Button  color='success' variant='contained' target='_blank' href={require('../../Assets/Pdf/prasanthResume.pdf')}>
-        <DownloadForOfflineIcon /> &nbsp;
-        Download Resume
-      </Button>
-    </Stack>
+    <>
+      <main className='bd-container bg-white p-2  rounded-md sm:p-0 '>
+        <div className='resume' >
+          <div className='resume__left'>
+            <Profile {...profile} {...socialMedia}/>
+            {/* <AboutMe {...aboutMe} /> */}
+            <Skills skills={skills}  />
+          </div>
+          <div className='resume__right'>
+            <Works {...experience} />
+            <Projects {...experience} />
+            <Academic {...experience} />
+          </div>
+        </div>
+      </main>
+    </>
   );
 };
-
-export default Resume;

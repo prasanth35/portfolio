@@ -15,11 +15,11 @@ const navItems = [
     icon: <HomeIcon />,
     link: '/'
   },
-  {
-    label: 'About',
-    icon: <Person4Icon />,
-    link: '/about'
-  },
+  // {
+  //   label: 'About',
+  //   icon: <Person4Icon />,
+  //   link: '/about'
+  // },
   // {
   //   label: 'Projects',
   //   icon: <AccountTreeIcon />,
@@ -47,7 +47,7 @@ const NavBar = () => {
       <List>
         {navItems.map((item) => (
           <ListItem key={item.label} >
-            <ListItemButton >
+            <ListItemButton onClick={()=>navigateToLink(item.link)}>
               <ListItemIcon>
                 {item.icon}
               </ListItemIcon>
@@ -65,9 +65,10 @@ const NavBar = () => {
   return (
     <>
       <AppBar sx={{
-        background:'transparent',
-        boxShadow : 'none'
-      }}>
+        background:'linear-gradient(90deg, rgba(2,0,36,1) 100%, rgba(0,212,255,1) 100%, rgba(10,7,126,1) 100%)',
+        opacity:0.9
+      }}
+      >
         <Toolbar >
           <Typography
             variant="h5"
@@ -76,13 +77,14 @@ const NavBar = () => {
             letterSpacing={4}
             sx={{ flexGrow: 1, color: '#9067C6' }}
             onClick={reloadOnClickLogo}
+            className='cursor-pointer'
           >
             {Constants.NAME}
           </Typography>
           <Box sx={{ display: { xs: 'none', sm: 'flex' } }} gap={6}>
             {navItems.map((item) => (
               <Stack onClick={()=>navigateToLink(item.link)} key={item.label} direction={'row'} alignItems={'center'} gap={2}>
-                <Typography variant='h5' className='text-stone-300 text-2xl font-semibold'>
+                <Typography variant='h5' className='text-stone-300 text-2xl font-semibold cursor-pointer'>
                   {item.label}
                 </Typography>
                 {item.icon}
