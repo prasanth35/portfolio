@@ -1,6 +1,6 @@
 import { Box, Grid, Stack, Typography } from '@mui/material';
 import Lottie from 'lottie-react';
-import DeveloperJson from '../../assets/Lottie/developer.json';
+import DeveloperJson from '../../Assets/Lottie/developer.json';
 import useTypewriter from '../../utils/hooks/UseTypeWritter';
 import { Constants } from '../../utils/constants/constants';
 
