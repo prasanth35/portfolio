@@ -8,17 +8,17 @@ const Skills = ({
     <>
       {
         skills?.map((skill: any) =>
-          <section key={skill?.header} className="technical-skills section" id="skills">
+          <div key={skill?.header} id="skills">
             <h2 className="section-title">{skill?.header}</h2>
             {
               skill?.content?.map((skillContent:any) => 
                 <div key={skill?.label} className="gap-2">
                 <Typography variant="body1" fontWeight={700}>{skillContent?.label}</Typography>
-                <Typography variant="body1"  className="text-left text-wrap">{skillContent?.value}</Typography>
+                <Typography variant="body1" mb={1} className="text-left text-wrap">{skillContent?.value}</Typography>
               </div>
               )
             }
-          </section>
+          </div>
         )
       }
     </>

@@ -22,14 +22,14 @@ const Menu = ({ menu }:any) => {
             id="nav-menu"
           >
             <ul className="nav__list">
-              {menu.map(({ label, section, className }) => (
+              {menu.map(({ label, section, className }:any) => (
                 <li className="nav__item" key={label}>
                   <NavLink
                     className="nav__link"
-                    activeClassName="active-link"
+                    // activeClassName="active-link"
                     onClick={_handleActiveSection}
                     to={{ pathname: "/", hash: section }}
-                    isActive={(m, l) => (l.hash === section ? true : false)}
+                    // isActive={(m, l) => (l.hash === section ? true : false)}
                   >
                     <i className={`bx ${className} nav__icon`} /> {label}
                   </NavLink>

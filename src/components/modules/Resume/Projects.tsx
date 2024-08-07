@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import Description from "./Description";
 
 const Projects = ({ projects }:any) => {
@@ -13,7 +14,7 @@ const Projects = ({ projects }:any) => {
   );
 };
 
-const Project = ({ name, company, period, description }:any) => {
+const Project = ({ name, company, period, description , link }:any) => {
   return (
     <div className="experience__content">
       <div className="experience__time">
@@ -23,6 +24,9 @@ const Project = ({ name, company, period, description }:any) => {
       <div className="experience__data bd-grid">
         <h3 className="experience__title">
           {name} - {company}
+         {link ? <span className="text-right float-right text-xs text-blue-500 underline">
+          <Link target="_blank" to={link}>View</Link>
+          </span> : null}
         </h3>
         <span className="experience__project">{period}</span>
         {description.map((desc: any, i: any) => <Description key={i} desc={desc} />)}

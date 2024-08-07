@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import Particles from "react-tsparticles";
-import { ParticlesParams } from "../../../Lib/Schemas/Particles";
+
 
 const Options = () => {
   // var { lsTheme, lsIcon, lsSnow } = "";

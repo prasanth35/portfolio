@@ -1,8 +1,9 @@
-import useTypewriter from '../../Common/Components/UseTypeWritter';
 import { Box, Grid, Stack, Typography } from '@mui/material';
 import Lottie from 'lottie-react';
-import DeveloperJson from '../../Assets/Lottie/developer.json';
-import { Constants } from '../../Lib/Constants';
+import DeveloperJson from '../../assets/Lottie/developer.json';
+import useTypewriter from '../../utils/hooks/UseTypeWritter';
+import { Constants } from '../../utils/constants/constants';
+
 
 
 
@@ -13,7 +14,7 @@ const Home = () => {
     });
 
     return (
-            <Box height="100vh" overflow="auto">
+            <Box overflow="auto">
                 <Box height="100%" display="flex" alignItems="center" justifyContent="center">
                     <Grid container mt={8} maxWidth="md">
                         <Grid item xs={12} sm={6}>
@@ -24,7 +25,7 @@ const Home = () => {
                             </Stack>
                         </Grid>
                         <Grid item xs={12} sm={6}>
-                            <Lottie animationData={DeveloperJson} loop />
+                            <Lottie defer animationData={DeveloperJson} loop />
                         </Grid>
                     </Grid>
                 </Box>

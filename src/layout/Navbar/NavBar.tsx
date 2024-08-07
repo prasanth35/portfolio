@@ -4,8 +4,8 @@ import MenuIcon from '@mui/icons-material/Menu';
 import HomeIcon from '@mui/icons-material/Home';
 import DescriptionIcon from '@mui/icons-material/Description';
 import Person4Icon from '@mui/icons-material/Person4';
-import { Constants } from '../../Lib/Constants';
 import { useNavigate } from 'react-router-dom';
+import { Constants } from '../../utils/constants/constants';
 
 const drawerWidth = 240;
 
@@ -66,12 +66,13 @@ const NavBar = () => {
     <>
       <AppBar sx={{
         background:'linear-gradient(90deg, rgba(2,0,36,1) 100%, rgba(0,212,255,1) 100%, rgba(10,7,126,1) 100%)',
-        opacity:0.9
+        opacity:0.9,
       }}
       >
         <Toolbar >
           <Typography
-            variant="h5"
+            variant="body1"
+            
             component="div"
             fontWeight={700}
             letterSpacing={4}
@@ -83,8 +84,8 @@ const NavBar = () => {
           </Typography>
           <Box sx={{ display: { xs: 'none', sm: 'flex' } }} gap={6}>
             {navItems.map((item) => (
-              <Stack onClick={()=>navigateToLink(item.link)} key={item.label} direction={'row'} alignItems={'center'} gap={2}>
-                <Typography variant='h5' className='text-stone-300 text-2xl font-semibold cursor-pointer'>
+              <Stack className=' cursor-pointer' onClick={()=>navigateToLink(item.link)} key={item.label} direction={'row'} alignItems={'center'} gap={2}>
+                <Typography variant='body2' className='text-stone-300 text-2xl font-semibold'>
                   {item.label}
                 </Typography>
                 {item.icon}
