@@ -5,14 +5,14 @@ import { Outlet, RouterProvider, createBrowserRouter } from 'react-router-dom';
 import { Router } from './Routers/Routers';
 import SkyLayout from './layout/Background/SkyLayout';
 import InstallPWAButton from './components/common/pwaInstallButton';
+import { Fragment } from 'react/jsx-runtime';
 
 
 const App = () => {
   return (
-      <>
-      <InstallPWAButton/>
+      <Fragment>
       <RouterProvider router={Router} />
-      </>
+      </Frag>
   );
 }
 
