@@ -12,7 +12,7 @@ const App = () => {
   return (
       <Fragment>
       <RouterProvider router={Router} />
-      </Frag>
+      </Fragment>
   );
 }
 
