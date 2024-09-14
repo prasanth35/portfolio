@@ -69,7 +69,7 @@ export const Data = {
       {
         company: "FR8",
         title: "Full Stack Developer",
-        period: "Dec. 2022 - Present",
+        period: "Dec. 2021 - Present",
         description: [
           "Implemented features like multi-language support (i18next) and direct customer interaction to improve user satisfaction across various FR8 products (Loads, Grow, OpenFR8, Parlo)",
           "Designed and built advanced responsive layouts, screens/components using adverse front-end technology (ReactJS, Next.js, Kotlin, React Native)",
