@@ -3,7 +3,7 @@ module.exports = {
     name : 'Portfolio',
     script: 'yarn',
     args : 'vite',
-    env : {
+    env_production : {
       NODE_ENV: "prod"
     },
     error_file : "./pm2-error.log",
