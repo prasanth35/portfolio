@@ -1,29 +1,66 @@
 <!DOCTYPE html>
-<html lang="en">
+<html
+  lang="en"
+  class="scroll-smooth"
+>
   <head>
     <meta charset="utf-8" />
-    <link rel="icon" href="/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1"
+    />
+    <meta
+      name="theme-color"
+      content="#000000"
+    />
     <meta
       name="description"
-      content="Web site created using create-react-app"
+      content="Prasanth is a computer science graduate seeking opportunities in software engineering. Visit his website to see hiss featured projects and get in touch!"
     />
-    <link rel="apple-touch-icon" href="/logo192.png" />
-    <link rel="manifest" href="/manifest.json" />
-    <title>PRASANTH - Portfolio</title>
+    <meta
+      name="msapplication-TileColor"
+      content="#110627"
+    />
+    <link
+      rel="icon"
+      href="/favicon.ico"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/favicon-16x16.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/apple-touch-icon.png"
+    />
+    <link
+      rel="mask-icon"
+      href="/icon.svg"
+      color="#0F172A"
+    />
+    <link
+      rel="manifest"
+      href="/manifest.json"
+    />
+    <title>Prasanth Gustavo | Software Engineer and Computer Science Student</title>
   </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/index.tsx"></script>
-    <script>
-      if('serviceWorker' in navigator){
-          navigator.serviceWorker.register('./sw.js').then(()=>{
-            console.log("WORKER REGISTERED");
-          }).catch(err => {
-            console.log("ERR",err)
-          })
-      }
-    </script>
+  <body class="bg-[#c5d1ff] text-slate-800 dark:bg-[#110627] dark:text-white">
+    <div
+      id="root"
+      class="bg-light dark:bg-dark"
+    ></div>
+    <script
+      type="module"
+      src="/src/main.tsx"
+    ></script>
   </body>
 </html>

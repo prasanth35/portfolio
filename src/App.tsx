@@ -1,19 +1,24 @@
-import './theme/index.css'
-import './theme/background.scss'
-import { Outlet, RouterProvider, createBrowserRouter } from 'react-router-dom';
+import { lazy, useEffect } from 'react'
+import Router from '@/router'
+import checkDarkTheme from '@/utils/checkDarkTheme'
 
-import { Router } from './Routers/Routers';
-import SkyLayout from './layout/Background/SkyLayout';
-import InstallPWAButton from './components/common/pwaInstallButton';
-import { Fragment } from 'react/jsx-runtime';
+const ScrollToTop = lazy(() => import('@/components/common/ScrollToTop'))
+const ScrollToTopFAB = lazy(() => import('@/components/common/ScrollToTopFAB'))
 
+export default function App(): JSX.Element {
+  useEffect((): void => {
+    if (checkDarkTheme()) {
+      document.documentElement.classList.add('dark')
+      return
+    }
+    document.documentElement.classList.remove('dark')
+  }, [])
 
-const App = () => {
   return (
-      <Fragment>
-      <RouterProvider router={Router} />
-      </Fragment>
-  );
+    <>
+      <Router />
+      <ScrollToTop />
+      <ScrollToTopFAB />
+    </>
+  )
 }
-
-export default App;
