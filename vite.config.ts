@@ -10,14 +10,18 @@ export default defineConfig({
       '@': path.resolve(__dirname, './src')
     }
   },
-  server: {
-    // proxy: {
-    //   '/blog/rss': {
-    //     target: 'https://medium.com/',
-    //     changeOrigin: true,
-    //     rewrite: path => path.replace(/^\/blog\/rss/, '')
-    //   }
-    // }
-  },
+  server : {
+    port : 3000
+},
   assetsInclude: ['**/*.md']
 })
+
+// server: {
+//   // proxy: {
+//   //   '/blog/rss': {
+//   //     target: 'https://medium.com/',
+//   //     changeOrigin: true,
+//   //     rewrite: path => path.replace(/^\/blog\/rss/, '')
+//   //   }
+//   // }
+//   },
