@@ -46,7 +46,7 @@ export default function Hero(): JSX.Element {
             'pb-0'
           )}
         >
-          Software Engineer at <InlineLink href='https://www.fr8.in/'>FR8</InlineLink>
+          Software Engineer at <InlineLink href='https://www2.deloitte.com/in/en.html'>Deloitte</InlineLink>
         </p>
         <SocialMediaLinks className={clsx('animate-fade-in !delay-500', 'mt-6')} />
       </div>
