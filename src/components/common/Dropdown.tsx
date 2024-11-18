@@ -14,6 +14,7 @@ export default function Dropdown(): JSX.Element {
         })
       }
       to={item.href}
+      target={item?.openInNewTab ? '_blank' : undefined}
     >
       <li
         className={clsx(
