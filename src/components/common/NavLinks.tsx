@@ -15,6 +15,7 @@ export default function NavLinks(): JSX.Element {
         <NavLink
           key={index}
           to={item.href}
+          target={item?.openInNewTab ? '_blank' : undefined}
         >
           {({ isActive }) => <PrimaryButton active={isActive}>{item.name}</PrimaryButton>}
         </NavLink>
