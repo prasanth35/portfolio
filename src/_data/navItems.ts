@@ -4,22 +4,26 @@ const navItems: NavItemsProps[] = [
   {
     name: 'Home',
     href: '/',
-    isNew: false
+    isNew: false,
+    openInNewTab : false
   },
-  // {
-  //   name: 'Blog',
-  //   href: '/blog',
-  //   isNew: true
-  // },
   {
     name: 'Projects',
     href: '/projects',
-    isNew: false
+    isNew: false,
+    openInNewTab : false
   },
   {
     name: 'About',
     href: '/about',
-    isNew: false
+    isNew: false,
+    openInNewTab : false
+  },
+  {
+    name: 'Resume',
+    href: 'https://docs.google.com/document/d/1jgzv66Sn-mIdKQo40QSr69sYkWbyXk4YOTRd-GVBOow',
+    isNew: true,
+    openInNewTab : true
   }
 ]
 
