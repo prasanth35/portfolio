@@ -46,7 +46,7 @@ const projects: ProjectProps[] = [
     techStacks: ['React', 'TypeScript', 'Tailwind CSS'],
     otherTechStacks: ['HTML/CSS', 'JavaScript'],
     category: 'Front-end development',
-    links: getLinks('portfolio', 'https://prasanth.site')
+    links: getLinks('portfolio')
   },
   {
     id: 'shopping-cart',
@@ -56,7 +56,7 @@ const projects: ProjectProps[] = [
     techStacks: ['React', 'TypeScript', 'Tailwind CSS','Redux','Material UI'],
     otherTechStacks: ['HTML/CSS', 'JavaScript'],
     category: 'Front-end development',
-    links: getLinks('shopping-cart', 'https://cart.prasanth.site')
+    links: getLinks('shopping-cart')
   },
   {
     id: 'currency-converter',
@@ -66,7 +66,7 @@ const projects: ProjectProps[] = [
     techStacks: ['React', 'TypeScript', 'Tailwind CSS'],
     otherTechStacks: ['HTML/CSS', 'JavaScript'],
     category: 'Front-end development',
-    links: getLinks('currency-converter', 'https://prasanth35.github.io/currency-converter/')
+    links: getLinks('currency-converter')
   },
   {
     id: 'screen-recorder-extension',

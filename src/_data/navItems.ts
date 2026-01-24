@@ -21,7 +21,7 @@ const navItems: NavItemsProps[] = [
   },
   {
     name: 'Resume',
-    href: 'https://docs.google.com/document/d/1jgzv66Sn-mIdKQo40QSr69sYkWbyXk4YOTRd-GVBOow',
+    href: 'https://docs.google.com/document/d/1at1523A8507IjCzMAcpjqP7B4C89Hfp2nqepBig1hQk/edit?usp=sharing',
     isNew: true,
     openInNewTab : true
   }
